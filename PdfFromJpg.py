@@ -7,7 +7,7 @@ def get_name(source):
 
 def pdf_make(dir):
     imagelist = []
-    files = [f for f in os.listdir('.') if f.endswith('.jpg')]
+    files = [f for f in os.listdir(dir) if f.endswith('.jpg')]
     for i in range(len(files)):
         image = Image.open(files[i])
         imagelist.append(image)
