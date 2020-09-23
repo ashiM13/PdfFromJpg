@@ -2,6 +2,7 @@ import os
 from PIL import Image
 
 def get_name(source):
+    "Function for create outfile name"
     head = source.split('.')[0]
     return head + '.pdf'
 
